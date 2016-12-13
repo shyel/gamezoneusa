@@ -3,6 +3,7 @@
     red: 		rgb(255,79,79);
     body text: 	rgb(51, 51, 51);
     gray banner: rgb(102,102,102);
+    light gray:  rgb(251,251,251);
 
 
     Google Font aldrich Regular
@@ -13,13 +14,30 @@
                    TYPOGRAPHY 
 ***********************************************/
 
+body {
+    background-color: #fff;
+	color: rgb(51, 51, 51);
+	font: 400 1.50em/1.50em 'Open Sans', sans-serif;
+}
+
 ol {
     list-style-type: none;
     padding-left: 0;
 }
 
 h1 {
-    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.25em;
+    border-bottom: 1px solid rgb(235,235,235);
+    font-weight: 300;
 }
 
 /**********************************************
@@ -29,12 +47,12 @@ h1 {
 .container {
     max-width: 960px;
     margin: 0 auto;
-}
-
-.container-fluid {
     padding-left: 30px;
     padding-right: 30px;
+
 }
+
+
 
 
 
@@ -44,18 +62,68 @@ h1 {
 
 .banner {
     background-color: rgb(255,79,79);
-
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.logo {
-    border: 1px solid gray;
+
+/**********************************************
+         INTRO        
+***********************************************/
+.img-con {
+    margin-top: 5px;
+  
+}
+
+.intro-img {
+    width: 100%; 
+  
+}
+
+.intro-container {
+    margin-bottom: 20px;
+    
+}
+/**********************************************
+         INFO(location&hours)       
+***********************************************/
+
+
+/**********************************************
+         SECTION        
+***********************************************/
+
+.title-container {
+    background-color: rgb(255,79,79);
+    color: #fff;
+    font-family: 'Aldrich', sans-serif;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.triangle {
+    margin: 0 auto;
+    margin-top: -1px;
+    width:0;
+    height: 0;
+    border-top: 20px solid rgb(255,79,79);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.copy {
+    margin-bottom: 20px;
     
 }
 
-/**********************************************
-                 
-***********************************************/
+
+.brand-img {
+    height: 100px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
