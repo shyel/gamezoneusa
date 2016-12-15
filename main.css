@@ -1,14 +1,15 @@
 /*********************************************
     
-    red: 		rgb(255,79,79);
-    body text: 	rgb(51, 51, 51);
+    red: 		 rgb(255,79,79);
+    body text: 	 rgb(51, 51, 51);
     gray banner: rgb(102,102,102);
     light gray:  rgb(251,251,251);
+    blue:        rgb(0,154,202);
 
 
     Google Font aldrich Regular
     Google Font open Sans Semibold and Regular
-
+  border: 1px solid blue;   
 ***********************************************/
 /**********************************************
                    TYPOGRAPHY 
@@ -20,88 +21,54 @@ body {
 	font: 400 1.50em/1.50em 'Open Sans', sans-serif;
 }
 
-ol {
-    list-style-type: none;
-    padding-left: 0;
+.banner {
+    background-color: rgb(255,79,79);
+    padding: 40px;
+    margin-bottom: 5px;
+
+}
+.intro-img {
+    width: 100%;  
+
+}
+.container {
+    max-width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+
+.text-container {
+
+    margin-bottom: 10px;   
 }
 
 h1 {
     font-size: 2em;
     font-weight: 300;
 }
-
-h2 {
-    font-size: 1.75em;
+.info-section {
+    margin-top: 20px;
 }
-
 h4 {
     font-size: 1.25em;
     border-bottom: 1px solid rgb(235,235,235);
     font-weight: 300;
 }
-
-/**********************************************
-                   CONTAINER 
-***********************************************/
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-
+ol {
+    list-style-type: none;
+    padding-left: 0;
 }
-
-
-
-
-
-/**********************************************
-                    HEADER   
-***********************************************/
-
-.banner {
-    background-color: rgb(255,79,79);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-
-/**********************************************
-         INTRO        
-***********************************************/
-.img-con {
-    margin-top: 5px;
-  
-}
-
-.intro-img {
-    width: 100%; 
-  
-}
-
-.intro-container {
-    margin-bottom: 20px;
-    
-}
-/**********************************************
-         INFO(location&hours)       
-***********************************************/
-
-
-/**********************************************
-         SECTION        
-***********************************************/
 
 .title-container {
-    background-color: rgb(255,79,79);
-    color: #fff;
+     background-color: rgb(255,79,79);
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.75em;
     font-family: 'Aldrich', sans-serif;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
 }
 
 .triangle {
@@ -114,16 +81,37 @@ h4 {
     border-right: 15px solid transparent;
 }
 
-.copy {
-    margin-bottom: 20px;
-    
-}
-
 
 .brand-img {
     height: 100px;
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
+}
 
+.featured-img-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.featured-img {
+    border-radius: 10px;
+}
+
+.btn {
+    color: #fff;
+}
+.social-item {
+    padding: 20px 10px;
+    background-color: rgb(0,154,202);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(255,79,79); 
+    font-size: 1.15em;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top:20px;
 }
