@@ -34,7 +34,7 @@ h2 {
 }
 h4 {
     font-size: 1.25em;
-    border-bottom: 1px solid rgb(235,235,235);
+    border-bottom: 1px solid rgb(200, 200, 200);
     font-weight: 300;
 }
 ol, ul {
@@ -43,6 +43,11 @@ ol, ul {
 }
 
 /*===================CONTAINER============================*/
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
 .container-fluid {
     padding: 0;
     min-height: 100%;
@@ -72,34 +77,38 @@ ol, ul {
 }
 
 .row {
-    padding-top:10px;
     margin-left: 0;
     margin-right: 0;
 }
 
 .store-art {
-    margin-top: 20px;
+   
     margin-bottom: -40px;
     height: 80px;
+  
    
-    background-size: cover;
+    /*background-size: cover;
     background-position: center;
     background-image: url(images/n64.png);
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; */ 
 }
+
+.h1-padtop {
+    padding-top: 20px;
+}
+
 
 
 /*===================BANNER============================*/
 .banner {
     background-color: rgb(255,79,79);
     margin-bottom: 8px;
+    text-align: center;
     padding: 40px;
-    max-height: 400px;
+    
 }
 
-.logo {
-    max-height: 300px;
-}
+
 
 /*===================WELCOME============================*/
 
@@ -145,7 +154,8 @@ ol, ul {
 
 
 .img-item {
-   position: absolute;    
+   position: absolute;
+   width: 100%;
 }
 
 
@@ -167,10 +177,9 @@ ol, ul {
 
 /*===================BRANDS============================*/
 .brand-img {
-    height: 100px;
     padding: 10px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .featured-img-container {
@@ -180,7 +189,13 @@ ol, ul {
 .featured-img {
     border-radius: 10px;
 }
+.social, brands{
+    margin-top: 40px;
+}
 
+.brands {
+    margin-top: 30px;
+}
 /*===================SOCIAL============================*/
 
 .btn {
@@ -209,12 +224,6 @@ footer {
 
 
 
-
-.brands {
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
 /**** MEDIA SCREEN ****/
 @media screen and (min-width: 960px){
 
@@ -227,11 +236,19 @@ footer {
         padding-right: 0;
     }
     
+   
+}
+
+@media screen and (min-width: 768px){
+
+    .logo{
+        max-width: 40%;
+    }
+
     .col-no-padleft {
     padding-left: 0;    
 }
 }
-
 @media screen and (max-width: 320px){
 h1 {
     font-size: 1.69em;
