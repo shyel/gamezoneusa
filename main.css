@@ -53,6 +53,7 @@ ol, ul {
     min-height: 100%;
     position: relative;
     max-width: 960px;
+    margin: 0 auto;
 }
 .padding-small-container {
     padding-left: 30px;
@@ -104,10 +105,12 @@ ol, ul {
     background-color: rgb(255,79,79);
     margin-bottom: 8px;
     text-align: center;
-    padding: 40px;
-    
+    padding: 60px 10px;    
 }
 
+.logo {
+    width: 90%;
+}
 
 
 /*===================WELCOME============================*/
@@ -116,7 +119,7 @@ ol, ul {
     height:180px;
     background-size: cover;
     background-position: center;
-    background-image: url(images/intro-xs.png);
+    background-image: url(images/intro-1s.jpg);
     background-repeat: no-repeat;
 }
 /*==================SLIDES===============================*/
@@ -138,7 +141,7 @@ ol, ul {
     background: #333;
     color: #fff;
     overflow: hidden;
-    vertical-align: middle; 
+    vertical-align: top; 
 
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -151,20 +154,16 @@ ol, ul {
     z-index: 2;
 }
 
-
-
 .img-item {
    position: absolute;
    width: 100%;
 }
 
-
-
-
-
-
 /*===================INFO============================*/
 
+.info {
+    margin-top: 40px;
+}
 .phone {
     margin-top: -8px;
 }
@@ -172,6 +171,10 @@ ol, ul {
 
 .col-no-padright {
     padding-right: 0;
+}
+
+.info-text {
+    padding-top:10px;
 }
 
 
@@ -183,11 +186,12 @@ ol, ul {
 }
 
 .featured-img-container {
-    margin-top: 25px;
+    margin-top:25px;
     margin-bottom: 25px;
 }
 .featured-img {
     border-radius: 10px;
+    margin: 0 auto;
 }
 .social, brands{
     margin-top: 40px;
@@ -201,12 +205,32 @@ ol, ul {
 .btn {
     color: #fff;
 }
-
+.social {
+    margin-top: 40px;
+}
 .social-item {
     padding: 20px 10px;
     background-color: rgb(0,154,202);
     margin-bottom: 15px;
     position: relative;
+}
+.social-nav {
+    
+	margin: 30px;
+	height: 100px;
+	width: 200px;
+	background-color: rgb(0,154,202);
+    color: #fff;
+}
+
+.bottom-art {
+    width: 100%;
+    height: 400px;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/super-guys.png);
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -217,7 +241,7 @@ footer {
     color: #fff;
     margin-top:40px;
     right: 0;
-    bottom: 10;
+    bottom: -40px;
     left: 0;
     position: absolute;
 }
@@ -227,13 +251,17 @@ footer {
 /**** MEDIA SCREEN ****/
 @media screen and (min-width: 960px){
 
-    .intro-img-con {
+    /*.intro-img-con {
         height:240px;
-    }
+    }*/
 
     .padding-small-container{
         padding-left: 0;
         padding-right: 0;
+    }
+    
+    .slides {
+        min-height: 340px;
     }
     
    
@@ -246,8 +274,47 @@ footer {
     }
 
     .col-no-padleft {
-    padding-left: 0;    
+    padding-left: 0;  
 }
+   /*  .hours-icon {
+     margin-top: 100px;
+    }*/
+}
+@media screen and (max-width: 767px){
+    .hours-icon {
+    margin-top: 85px;
+} 
+}
+
+@media screen and (max-width: 550x){
+    .hours-icon {
+    margin-top: 90px;
+} 
+}
+
+@media screen and (max-width: 425px){
+h1 {
+    font-size: 1.69em;
+}
+    
+.time {
+    padding-right: 0;
+}
+
+.days {
+    padding-left: 5px;
+    
+}
+.hours-icon {
+    margin-top: 110px;
+} 
+
+}
+
+@media screen and (max-width: 375px){
+   .hours-icon {
+    margin-top: 120px;
+}  
 }
 @media screen and (max-width: 320px){
 h1 {
@@ -262,6 +329,9 @@ h1 {
     padding-left: 5px;
     
 }
+.hours-icon {
+    margin-top: 130px;
+} 
 }
 
 
