@@ -1,5 +1,4 @@
 /*********************************************
-    
     red: 		 rgb(255,79,79);
     body text: 	 rgb(51, 51, 51);
     gray banner: rgb(102,102,102);
@@ -8,157 +7,131 @@
 
 
     Google Font aldrich Regular
-    Google Font open Sans Semibold and Regular
-  border: 1px solid blue;   
+    Google Font open Sans Semibold and Regular  
 
 /**********************************************
-                   TYPOGRAPHY 
-***********************************************/
-
+                    
+/*===================TYPOGRAPHY====================*/
 body {
-    
     background-color: #fff;
 	color: rgb(51, 51, 51);
 	font: 400 1.50em/1.50em 'Open Sans', sans-serif;
     position: relative;
 }
-
 h1 {
     font-size: 2em;
     font-weight: 300;
 }
-
 h2 {
+    font-family: 'Aldrich', sans-serif;  
     font-size: 1.75em;
-    font-family: 'Aldrich', sans-serif;   
 }
 h4 {
-    font-size: 1.25em;
     border-bottom: 1px solid rgb(200, 200, 200);
+    font-size: 1.25em;
     font-weight: 300;
 }
 ol, ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 /*===================CONTAINER============================*/
 .container {
     margin: 0 auto;
     padding: 0;
 }
-
 .container-fluid {
-    padding: 0;
     min-height: 100%;
-    position: relative;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0;
+    position: relative;
 }
 .padding-small-container {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 .title-container {
     background-color: rgb(255,79,79);
-    margin-top: 40px;
     color: #fff;
+    margin-top: 40px;
     padding: 10px;
 }
-
 .triangle {
-    margin: 0 auto;
-    margin-top: -1px;
-    width:0;
-    height: 0;
-    border-top: 20px solid rgb(255,79,79);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
+    border-top: 20px solid rgb(255,79,79);
+    height: 0;
+    margin: 0 auto;
+    margin-top: -1px;
+    width:0;  
 }
-
 .row {
     margin-left: 0;
     margin-right: 0;
 }
-
-.store-art {
-   
-    margin-bottom: -40px;
+.store-art { 
     height: 80px;
-  
-   
+    margin-bottom: -40px;
     /*background-size: cover;
     background-position: center;
     background-image: url(images/n64.png);
     background-repeat: no-repeat; */ 
 }
-
 .h1-padtop {
     padding-top: 20px;
 }
-
-
-
 /*===================BANNER============================*/
 .banner {
     background-color: rgb(255,79,79);
     margin-bottom: 8px;
+    padding: 60px 10px;  
     text-align: center;
-    padding: 60px 10px;    
 }
-
 .logo {
     width: 90%;
 }
-
-
 /*===================WELCOME============================*/
-
 .intro-img-con { 
-    height:180px;
     background-size: cover;
     background-position: center;
     background-image: url(images/intro-1s.jpg);
     background-repeat: no-repeat;
+    height:180px;
 }
 /*==================SLIDES===============================*/
 .slides {
-    position: relative;
     height: 280px;
-    margin: 0px;
     list-style-type: none;
+    margin: 0px;
+    position: relative;  
 }
-
 .slide-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
     background: #333;
     color: #fff;
+    height: 100%;
+    left: 0;
+    opacity: 0;
     overflow: hidden;
-    vertical-align: top; 
-
+    position: absolute;
+    top: 0;
+    vertical-align: middle; 
+    width: 100%;
+    z-index: 1;
+    
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
 }
-
 .showing {
     opacity: 1;
     z-index: 2;
 }
-
 .img-item {
    position: absolute;
    width: 100%;
 }
-
 /*===================INFO============================*/
 
 .info {
@@ -167,17 +140,12 @@ ol, ul {
 .phone {
     margin-top: -8px;
 }
-
-
 .col-no-padright {
     padding-right: 0;
 }
-
 .info-text {
     padding-top:10px;
 }
-
-
 /*===================BRANDS============================*/
 .brand-img {
     padding: 10px;
@@ -245,93 +213,68 @@ footer {
     left: 0;
     position: absolute;
 }
-
-
-
-/**** MEDIA SCREEN ****/
+/*===============MEDIA SCREEN========================*/
 @media screen and (min-width: 960px){
-
-    /*.intro-img-con {
-        height:240px;
-    }*/
-
     .padding-small-container{
         padding-left: 0;
         padding-right: 0;
     }
-    
     .slides {
         min-height: 340px;
     }
-    
-   
 }
-
 @media screen and (min-width: 768px){
-
     .logo{
         max-width: 40%;
     }
-
     .col-no-padleft {
     padding-left: 0;  
-}
-   /*  .hours-icon {
-     margin-top: 100px;
-    }*/
+    }
 }
 @media screen and (max-width: 767px){
     .hours-icon {
     margin-top: 85px;
-} 
+    } 
 }
-
 @media screen and (max-width: 550x){
     .hours-icon {
     margin-top: 90px;
-} 
+    } 
 }
-
 @media screen and (max-width: 425px){
 h1 {
     font-size: 1.69em;
-}
-    
+}   
 .time {
     padding-right: 0;
 }
-
 .days {
     padding-left: 5px;
     
 }
 .hours-icon {
     margin-top: 110px;
-} 
-
+    } 
 }
 
 @media screen and (max-width: 375px){
    .hours-icon {
     margin-top: 120px;
-}  
+    }  
 }
 @media screen and (max-width: 320px){
-h1 {
-    font-size: 1.69em;
-}
-    
-.time {
-    padding-right: 0;
-}
-
-.days {
-    padding-left: 5px;
-    
-}
-.hours-icon {
-    margin-top: 130px;
-} 
+    h1 {
+        font-size: 1.69em;
+    }   
+    .time {
+        padding-right: 0;
+    }
+    .days {
+        padding-left: 5px;    
+    }
+    .hours-icon {
+        margin-top: 130px;
+    } 
 }
 
 
